@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#back{
+    width: 100%;
+    height: 100%;
+    background-color: #575fcf;
+
+}
+
+
+#image{
+    width: 100%;
+    height: 100%;
+    background-image: url('drive.jpg');
+    background-size: cover;
+    clip-path: polygon(0 0,100% 0%, 100% 70%, 0 100%);
+    position: relative;
+}
+
+#overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#content{
+    position: absolute;
+    top: 90%;
+    left: 70%;
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+#heading{
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    width: 500px;
+    
+    
+}
+
+#heading input[type="text"]{
+    width: 600px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    
+}
+
+#heading h1{
+    font-size: 70px;
+    margin-top: 20px;
+}
+
+
+.para{
+    margin-top: 25px;
+}
+
+.X{
+    border-bottom: 1px solid white;
+    width: 250px;
+}
+
+#bottom{
+    width: 100%;
+    height: 100%;
+    background-color: #f9ca24;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+#cards{
+    width: 250px;
+    height: 350px;
+    background-color:#575fcf;
+    box-shadow: 0px 10px 50px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#emoji{
+    border-bottom: 1.5px solid white;
+    padding-top: 10px;
+
+    
+}
+
+#contenty{
+    text-align: center;
+}
+
+#contenty p{
+    margin-top: 30px;
+}
+
+
+
+#footer{
+    width: 100%;
+    min-height: 500px;
+    background-color: #575fcf;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+
+#form{
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 100px;
+    margin-right: 500px;
+}
+
+#form input[type="text"],input[type="email"]{
+    display: inline-block;
+    width: 250px;
+    border: none;
+    background-color: #fff;
+    border-bottom: 1px solid black;
+}
+
+#form input[type="submit"]{
+    width: 80px;
+    height: 30px;
+    background-color: #575fcf;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 85px;
+}
+
+#contacty{
+
+    margin-top: 200px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #ffff;
+    
+
+}
+
+#contacty ul{
+    margin-top: 20px;
+}
+
+#icon{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+@keyframes animate{
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.1);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+#cards:hover{
+    animation: animate 1s ease-in-out;
+    cursor: pointer;
+}
+
+.fa-heart{
+    animation: animate 1s infinite ease-in-out;
+}
+
+
+#navbar{
+    
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+#navbar a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    margin:10px 30px;
+    
+}
+
+#navbar a:hover{
+    cursor: pointer;
+}
+
+#icon:hover{
+    cursor: pointer;
+    
+}
+
+.fa-search{
+    position: absolute;
+    top: 1%;
+    left: 110%;
+    color: gray;
+    transform: scale(.5);
+
+}
+
+.fa-search:hover{
+    cursor:pointer;
+}
+
+
+.fab:hover{
+    animation: animatey 1s ease-in-out;
+}
+
+@keyframes animatey{
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.5);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
